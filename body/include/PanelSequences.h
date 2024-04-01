@@ -478,6 +478,7 @@ sequence_t const body_panel_pingpong_Doors PROGMEM = //SE35
  		{SPLIT_WORD(200), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
  		{SPLIT_WORD(0), 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP}
 };
+//Eebel END
 sequence_t const body_panel_use_claws PROGMEM = //SE36
 {
 		//  ---------------------------------------MASTER--------------------------------------------  ----SLAVE------ 
@@ -496,7 +497,6 @@ sequence_t const body_panel_use_claws PROGMEM = //SE36
  		{SPLIT_WORD(250), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
  		{SPLIT_WORD(0), 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP}
 };
-//Eebel END
 
 sequence_t const body_panel_all_open PROGMEM =
 {
