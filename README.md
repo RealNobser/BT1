@@ -9,8 +9,8 @@ Connecting Servos BT1 (common way)
 | --- | --- | --- |
 |Servo 1|Launcher 1|Left Launcher Panel|
 |Servo 2|Launcher 2|Right Launcher Panel|
-|Servo 3|Rocket 1|Left Rocket Firing|
-|Servo 4|Rocket 2|Right Rocket Firingl|
+|Servo 3|Rocket 1|Left Rockets Firing|
+|Servo 4|Rocket 2|Right Rockets Firing|
 |Servo 5|unused||
 |Servo 6|unused||
 |Servo 7|unused||
