@@ -283,7 +283,6 @@ sequence_t panel_dance PROGMEM =  //Used in SE07
 		{SPLIT_WORD(40), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_CLS, 	_NP,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
 		{SPLIT_WORD(0), 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP,	_NP,	_NP}
 };
-
 sequence_t panel_init PROGMEM =
 {
 		//  ---------------------------------------MASTER--------------------------------------------  ----SLAVE------ 
@@ -383,7 +382,7 @@ sequence_t const body_utility_arms_open PROGMEM = //SE30
 };
 
 
-sequence_t const body_panel_all_test PROGMEM = //SE31
+sequence_t const body_panel_all_test PROGMEM =	//SE31
 {
  		// Open all doors and use all tools
 		//  ---------------------------------------MASTER--------------------------------------------  ----SLAVE------ 
@@ -479,26 +478,53 @@ sequence_t const body_panel_pingpong_Doors PROGMEM = //SE35
  		{SPLIT_WORD(0), 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP}
 };
 //Eebel END
+
+// Steinke BEGIN
 sequence_t const body_panel_use_claws PROGMEM = //SE36
 {
 		//  ---------------------------------------MASTER--------------------------------------------  ----SLAVE------ 
 		// time	servo1	servo2	servo3	servo4	servo5	servo6	servo7	servo8	servo9 servo10 servo11 servo12 servo13 
 		//     	DPL		UtlArmU	UtlArmL	LBdyDr	LArm	LArmToolRBdyDr	RArm	RArmTool ChrgBay 
 	 	{SPLIT_WORD(20), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
- 		{SPLIT_WORD(150), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_CLS, 	_CLS, 	_OPN, 	_CLS,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
- 		{SPLIT_WORD(150), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_OPN, 	_CLS, 	_OPN, 	_OPN,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(90), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_CLS, 	_CLS, 	_OPN, 	_CLS,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(90), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_OPN, 	_CLS, 	_OPN, 	_OPN,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
  		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_OPN, 	_OPN, 	_OPN, 	_OPN,	_OPN, 	_CLS,	_CLS, 	_CLS,	_CLS},
  		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_OPN, 	_CLS, 	_OPN, 	_OPN,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
  		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_OPN, 	_OPN, 	_OPN, 	_OPN,	_OPN, 	_CLS,	_CLS, 	_CLS,	_CLS},
  		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_OPN, 	_CLS, 	_OPN, 	_OPN,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
  		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_OPN, 	_OPN, 	_OPN, 	_OPN,	_OPN, 	_CLS,	_CLS, 	_CLS,	_CLS},
- 		{SPLIT_WORD(20), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_OPN, 	_CLS, 	_OPN, 	_OPN,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
- 		{SPLIT_WORD(170), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_CLS, 	_CLS, 	_OPN, 	_CLS,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_OPN, 	_CLS, 	_OPN, 	_OPN,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_OPN, 	_OPN, 	_OPN, 	_OPN,	_OPN, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_OPN, 	_CLS, 	_OPN, 	_OPN,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_OPN, 	_OPN, 	_OPN, 	_OPN,	_OPN, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(50), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_OPN, 	_CLS, 	_OPN, 	_OPN,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(120), 	_CLS, 	_CLS, 	_CLS, 	_OPN,	_CLS, 	_CLS, 	_OPN, 	_CLS,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
  		{SPLIT_WORD(250), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
  		{SPLIT_WORD(0), 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP}
 };
 
-sequence_t const body_panel_all_open PROGMEM =
+sequence_t const body_panel_use_right_claw PROGMEM = //SE37
+{
+		//  ---------------------------------------MASTER--------------------------------------------  ----SLAVE------ 
+		// time	servo1	servo2	servo3	servo4	servo5	servo6	servo7	servo8	servo9 servo10 servo11 servo12 servo13 
+		//     	DPL		UtlArmU	UtlArmL	LBdyDr	LArm	LArmToolRBdyDr	RArm	RArmTool ChrgBay 
+	 	{SPLIT_WORD(20), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(150), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_OPN, 	_CLS,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(150), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_OPN, 	_OPN,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_OPN, 	_OPN,	_OPN, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_OPN, 	_OPN,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_OPN, 	_OPN,	_OPN, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_OPN, 	_OPN,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_OPN, 	_OPN,	_OPN, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_OPN, 	_OPN,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(10), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_OPN, 	_OPN,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(170), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_OPN, 	_CLS,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(250), 	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS, 	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS, 	_CLS,	_CLS},
+ 		{SPLIT_WORD(0), 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP}
+};
+// Steinke END
+
+sequence_t const body_panel_all_open PROGMEM = //SE51
 {
 		//  ---------------------------------------MASTER--------------------------------------------  ----SLAVE------ 
 		// time	servo1	servo2	servo3	servo4	servo5	servo6	servo7	servo8	servo9 servo10 servo11 servo12 servo13 
@@ -514,7 +540,7 @@ sequence_t const body_panel_all_open PROGMEM =
 		{SPLIT_WORD(0), 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP}
 };
 
-sequence_t const body_panel_all_open_long PROGMEM =
+sequence_t const body_panel_all_open_long PROGMEM = //SE56
 {
 		// Faint Body
 		//  ---------------------------------------MASTER--------------------------------------------  ----SLAVE------ 
@@ -529,7 +555,7 @@ sequence_t const body_panel_all_open_long PROGMEM =
 };
 
 
-sequence_t const body_panel_wave PROGMEM =
+sequence_t const body_panel_wave PROGMEM = //SE52
 {
 		//  ---------------------------------------MASTER--------------------------------------------  ----SLAVE------ 
 		// time	servo1	servo2	servo3	servo4	servo5	servo6	servo7	servo8	servo9 servo10 servo11 servo12 servo13 
@@ -549,7 +575,7 @@ sequence_t const body_panel_wave PROGMEM =
 		{SPLIT_WORD(0), 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP, 	_NP,	_NP, 	_NP, 	_NP, 	_NP}
 };
 
-sequence_t const body_panel_init PROGMEM =
+sequence_t const body_panel_init PROGMEM = //SE00
 {
 		//  ---------------------------------------MASTER--------------------------------------------  ----SLAVE------ 
 		// time	servo1	servo2	servo3	servo4	servo5	servo6	servo7	servo8	servo9 servo10 servo11 servo12 servo13 
@@ -566,7 +592,7 @@ sequence_t const body_panel_init PROGMEM =
  * See README.md for Servo Connections
  */
 
-sequence_t cp_dome_panel_init PROGMEM =
+sequence_t cp_dome_panel_init PROGMEM = //SE00
 {
 		//  ---------------------------------------MASTER--------------------------------------------  ----SLAVE------ 
 		// 	time			servo1	servo2	servo3	servo4	servo5	servo6	servo7	servo8	servo9 servo10 servo11 servo12 servo13 

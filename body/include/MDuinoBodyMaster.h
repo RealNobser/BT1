@@ -17,8 +17,7 @@
  *	:SE33 Body - Use Gripper
  *	:SE34 Body - Use Interface Tool
  *	:SE35 Body - Ping Pong Body Doors
- *	:SE36 Body - Use Both Gripper Claws
- 
+ *	:SE36 Body - Use Claws
  */
 
 class MDuinoBodyMaster : public MDuinoDomeMaster
