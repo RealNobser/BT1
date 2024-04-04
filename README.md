@@ -46,6 +46,6 @@ Connecting Servos BT1 (common way)
 |Servo 7|ToolRBdyDr - Right BreadPan Door||
 |Servo 8|RArm - Right Arm Raise/Lower||
 |Servo 9|RArmTool - Right Arm Tool||
-|Servo 10|unused|Future Charge Bay Door servo|
+|Servo 10|Charge Bay Door||
 |Servo 11|unused||
 |AUX|unused||
